@@ -271,7 +271,8 @@ class GPT {
     if (this.initialized) return console.error("Model already loaded");
 
     console.log("Loading model from folder:", folder);
-    const weightsFolder = `weights/${folder}/`;
+    //const weightsFolder = `weights/${folder}/`;
+    const weightsFolder = //WebGPT/weights/gpt2params_gpt.json
 
     const params = await this.loadParameters(weightsFolder);
     const { embeddingsBuffers, deEmbeddingsBuffers } = await this.loadEmbeddings(params, weightsFolder);
