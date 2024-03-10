@@ -272,7 +272,7 @@ class GPT {
 
     console.log("Loading model from folder:", folder);
     //const weightsFolder = `weights/${folder}/`;
-    const weightsFolder = `/weights/gpt2params_gpt.json`;//WebGPT/weights/gpt2params_gpt.json
+    const weightsFolder = `/weights/gpt2`; //params_gpt.json;//WebGPT/weights/gpt2params_gpt.json
 
     const params = await this.loadParameters(weightsFolder);
     const { embeddingsBuffers, deEmbeddingsBuffers } = await this.loadEmbeddings(params, weightsFolder);
